@@ -59,7 +59,7 @@
     <body>
         <canvas class=block id="unity-canvas"></canvas>
         <div id="loading"><span id="loading-text"></span></div>
-        <script src="Build/SwipeAll!_v0.24.loader.js"></script>
+        <script src="Build/SwipeAll!_v0.25.loader.js"></script>
         <script src="./instant-games-bridge.js"></script>
 		<img class=blockIMG id="loading-canvas" align=”middle”>
 		
@@ -133,20 +133,8 @@
             const STORAGE_KEYS_SEPARATOR = '{bridge_keys_separator}'
             const STORAGE_VALUES_SEPARATOR = '{bridge_values_separator}'
 
-			//window.onload = function() {
-				  
-				  // Setup all nodes
-				  // ...
-			//	}
-			//let context = new AudioContext();
-
-
-
 			function _JS_Sound_Init()
 			  {
-					/*context.resume().then(() => {
-						console.log('Playback resumed successfully');
-					  });
 				  try {
 					  window.AudioContext = window.AudioContext||window.webkitAudioContext;
 					  WEBAudio.audioContext = new AudioContext();
@@ -155,7 +143,7 @@
 				  }
 				  catch(e) {
 					  alert('ЭЭЭ БРАТАН А ЗВУК ГИДЕ А?');
-				  }*/
+				  }
 			  }
 
 			if (window.innerWidth < window.innerHeight) // портрет
@@ -591,9 +579,9 @@
             createUnityInstance(
                 document.querySelector('#unity-canvas'), 
                 {
-                    dataUrl: 'Build/SwipeAll!_v0.24.data',
-                    frameworkUrl: 'Build/SwipeAll!_v0.24.framework.js',
-                    codeUrl: 'Build/SwipeAll!_v0.24.wasm',
+                    dataUrl: 'Build/SwipeAll!_v0.25.data',
+                    frameworkUrl: 'Build/SwipeAll!_v0.25.framework.js',
+                    codeUrl: 'Build/SwipeAll!_v0.25.wasm',
                     streamingAssetsUrl: 'StreamingAssets',
                     companyName: 'ReallShin',
                     productName: 'SwipeAll',
